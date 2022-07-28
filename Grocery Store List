@@ -1,0 +1,30 @@
+--Create a store database
+
+CREATE TABLE tjs (
+    id INTEGER PRIMARY KEY,
+    product TEXT,
+    price INTEGER,
+    aisle INTEGER,
+    perisable TEXT,
+    truck TEXT);
+
+INSERT INTO tjs VALUES (1, "bbq chips", 2.99, 1, "no", "night");
+INSERT INTO tjs VALUES (2, "broccoli", 3.99, 2, "yes", "day");
+INSERT INTO tjs VALUES (3, "eggplant", .99, 2, "yes", "day");
+INSERT INTO tjs VALUES (4, "water", 1.99, 3, "no", "night");
+INSERT INTO tjs VALUES (5, "sparkling water", 2.99, 3, "no", "night");
+INSERT INTO tjs VALUES (6, "Takis", 1.99, 1, "no", "night");
+INSERT INTO tjs VALUES (7, "Vanilla Ice Cream", 3.49, 3, "no", "night");
+INSERT INTO tjs VALUES (8, "Pretzels", 1.99, 1, "no", "night");
+
+INSERT INTO tjs VALUES (9, "Crackers", .99, 1, "no", "night");
+Insert into tjs values (10, "Nachos", 1.99, 1, "no", "night");
+INSERT INTO tjs VALUES (11, "Beets", 1.99, 2, "yes", "day");
+INSERT INTO tjs VALUES (12, "Tomatoes", .99, 2, "yes", "day");
+INSERT INTO tjs VALUES (13, "Banannas", .25, 2, "yes", "day");
+INSERT INTO tjs VALUES (14, "Sublimes", 3.99, 3, "no", "night");
+INSERT INTO tjs VALUES (15, "Cones", .99, 3, "no", "night");
+
+-- Display pricing from most expensive to least expensive
+
+Select * from tjs Order by price desc
